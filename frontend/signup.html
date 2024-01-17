@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>todo_app</title>
+    <link rel="stylesheet" href="auth.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Signup</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required id="names">
+          <span></span>
+          <label >Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required id="usernames">
+          <span></span>
+          <label >Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required id="passwords">
+          <span></span>
+          <label >Password</label>
+        </div>
+        <!-- <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Confirm Password</label>
+        </div> -->
+        <Button id="signup_btn" class="btn">Signup</Button>
+        <div class="login_link">
+          Already signup? <a href="/">Login</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
