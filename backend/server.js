@@ -5,6 +5,9 @@ const bodyParser = require('body-parser')
 const database  = require('./private/database.js')
 const app = express();
 const PORT = 3000;
+const cookieParser = require('cookie-parser');
+
+app.use(cookieParser());
 
 const users = require('./routes/users.js')
 const auth = require('./routes/auth.js')

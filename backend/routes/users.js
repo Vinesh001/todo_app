@@ -25,6 +25,7 @@ router.post('', async(req, res)=>{
             }
             const dataAdded = await userModels.create(dataToBeAdded);
             if(dataAdded){
+                // res.cookie('userId', dataAdded._id);
                 res.json({
                     message:"Data added successfully!",
                     data:dataAdded

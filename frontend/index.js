@@ -12,6 +12,7 @@ function parseResponse(parseData){
     }
 }
 function callback(res){
+    console.log("vine")
     res.json().then(parseResponse);
 }
 function loginfunc(){

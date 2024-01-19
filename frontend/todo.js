@@ -5,6 +5,7 @@ const list = document.getElementById("todo-list");
 
 
 function funcAdd(data) {
+  console.log("vinesh")
   for(let i=0; i<data.length; i++){
     const listItem = document.createElement("li");
     listItem.className = "add-item";

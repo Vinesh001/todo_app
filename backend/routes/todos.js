@@ -6,6 +6,7 @@ const todoModel = require('../models/todoModel')
 // To get all data 
 router.get('/', async(req, res) => {
     try{
+        // console.log(req.cookies);
         const data = await todoModel.find({});
         console.log(data)
         if(data){
@@ -30,7 +31,8 @@ router.post('/', async(req, res)=>{
     try{
         const { description} = req.body;
         const dataToBeUpdated = {
-            description
+            description,
+            // userId:req.cookies.userId
         }
         const ret = await todoModel.create(dataToBeUpdated);
         if(ret){

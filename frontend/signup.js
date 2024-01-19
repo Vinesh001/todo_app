@@ -6,8 +6,8 @@ const btn = document.getElementById("signup_btn")
 function parseResponse(parseData){
     console.log("vviensh")
     console.log(parseData);
-    if(parseData[0]){
-        console.log(parseData[0]);
+    if(parseData){
+        console.log(parseData);
         window.location.href='http://127.0.0.1:5500/todo_app/frontend/todo.html'
     }else{
         console.log("something went wrong!")
